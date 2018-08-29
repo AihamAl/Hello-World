@@ -1,1 +1,22 @@
-TEst
+Vi har arbetet med while loop, förvandlat flera lines till "One-liner" och aktiverat github.
+Något jag måste jobba på är att få github att fungera genom terminalen. Logiska och booliska operatorer har vi också jobbat med. 
+
+count = 0
+while(stannaVidHundra != 20):
+   stannaVidHundra = random.randrange(start = 0, stop = 100)
+   count += 1
+   print("stannaVidHundra = " + str(stannaVidHundra) + " Count = " + str(count))
+
+
+Codeacademy erbjuder en gratis python kurs baserat på vad Jeff king erbjuder. Det är något att kolla upp.
+
+Command lines för clone repository, lägga till en fil och synca:
+
+git clone "Repository"
+git add 
+git commit
+git push
+
+Byter mapp:
+cd
+ls
