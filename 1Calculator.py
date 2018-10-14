@@ -2,16 +2,36 @@ import random
 
 class Tärning1:
 
-    def rollDice(self):
+
+    def rollDice (self):
 
         y = random.randint(1, 12)
+        c = 0
+
+        if (y == 1):
+            c = c + 1
+
+        if (y == 2):
+            c = c + 2
+
+        if (y == 3):
+            c = c + 3
+
+        if (y == 4):
+            c = c + 4
+
+        if (y == 5):
+            c = c + 5
+
+        if (y == 6):
+            c = c + 6
 
         if (y == 1):
             print("[----------------]")
             print("[                ]")
             print("[        O       ]")
             print("[                ]")
-            print("[----------------] \n")
+            print("[------", c, "-------] \n")
 
 
         if (y == 2):
@@ -19,7 +39,7 @@ class Tärning1:
             print("[   O            ]")
             print("[                ]")
             print("[            O   ]")
-            print("[----------------] \n")
+            print("[------", c, "-------] \n")
 
 
         if (y == 3):
@@ -27,7 +47,7 @@ class Tärning1:
             print("[   O            ]")
             print("[        O       ]")
             print("[            O   ]")
-            print("[----------------] \n")
+            print("[------", c, "-------] \n")
 
 
         if (y == 4):
@@ -35,7 +55,7 @@ class Tärning1:
             print("[   O        O   ]")
             print("[                ]")
             print("[   O        O   ]")
-            print("[----------------] \n")
+            print("[------", c, "-------] \n")
 
 
         if (y == 5):
@@ -43,8 +63,7 @@ class Tärning1:
             print("[   O        O   ]")
             print("[        O       ]")
             print("[   O        O   ]")
-            print("[----------------] \n")
-
+            print("[------", c, "-------] \n")
 
 
         if (y == 6):
@@ -52,64 +71,41 @@ class Tärning1:
             print("[   O        O   ]")
             print("[   O        O   ]")
             print("[   O        O   ]")
-            print("[----------------] \n")
+            print("[------", c, "-------] \n")
 
+class Person:
 
-        if (y == 7):
-            print("[----------------]")
-            print("[  O          O  ]")
-            print("[  O     O    O  ]")
-            print("[  O          O  ]")
-            print("[----------------] \n")
+    def p (self):
 
+        i = "Johan Carlsson"
+        f = "Johanna berglund"
+        d = "Kevin harlund"
+        g = "Hampus berg"
 
-        if (y == 8):
-            print("[----------------]")
-            print("[  O          O  ]")
-            print("[  O   O  O   O  ]")
-            print("[  O          O  ]")
-            print("[----------------] \n")
+        u = random.randint(1, 4)
 
+        if (u == 1):
+            print(i)
 
-        if (y == 9):
-            print("[----------------]")
-            print("[   O  O      O  ]")
-            print("[   O    O    O  ]")
-            print("[   O      O  O  ]")
-            print("[----------------] \n")
+        if (u == 2):
+            print(f)
 
+        if (u == 3):
+            print(d)
 
-        if (y == 10):
-            print("[----------------]")
-            print("[  O  O   O  O   ]")
-            print("[  O         O   ]")
-            print("[  O  O   O  O   ]")
-            print("[----------------] \n")
-
-
-        if (y == 11):
-            print("[----------------]")
-            print("[  O  O    O  O  ]")
-            print("[  O     O    O  ]")
-            print("[  O  O    O  O  ]")
-            print("[----------------] \n")
-
-
-        if (y == 12):
-            print("[----------------]")
-            print("[  O O     O  O  ]")
-            print("[  O O     O  O  ]")
-            print("[  O O     O  O  ]")
-            print("[----------------] \n")
-
-
+        if (u == 4):
+            print(g)
 
 
 t1 = Tärning1()
 t2 = Tärning1()
+t3 = Person()
+
+
 while(True):
     type(t1.rollDice())
     type(t2.rollDice())
+    type(t3.p())
     print("Press Enter to continue.")
     a = input("Press Q to quit.")
     if a == "q":
