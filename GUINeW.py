@@ -1,3 +1,17 @@
+Hi I'm trying to do an assignment and I'm having a problem inserting information into mysql database.
+
+How it should work: The information should be written in the blank areas { Entry1 and Entry2} and then when hit ENTER it should go to the database and be stored.
+
+The first problem I'm having is that I don't know how to write or implement the code for the file "GUINeW" to "MYSQL2" so the information could be stored in the database.
+
+Secondly is that I'm getting "No module named 'mysql'" in both of my scripts, which resides in pictures number 9 and 10. 
+
+
+
+
+
+
+
 
 from tkinter import *
 from tkinter import messagebox
